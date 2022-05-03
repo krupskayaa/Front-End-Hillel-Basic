@@ -1,0 +1,8 @@
+.proposal-representation::before {
+    content: '';
+    width: 92px;
+    height: 92px;
+    background-image: url('../img/proposal-representation.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}

@@ -1,0 +1,34 @@
+.we-care {
+    padding: 31px 0 60px 0;
+    &__text-quality {
+        margin: 20px 0;
+    }
+    &__text-confidence {
+        margin-bottom: 29px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .we-care {
+        padding-top: 60px;
+        &__text-confidence {
+            margin-bottom: 30px;
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .we-care {
+        padding-top: 61px;
+        padding-bottom: 30px;
+        &__info {
+            display: flex;
+            margin: 0 auto;
+            max-width: 1080px;
+        }
+        &__wrapper-text {
+            margin-right: 60px;
+        }
+        &__title-gradient {
+            min-width: 362px;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.box-back {
+    background-image: $gradientSupersoft;
+    border-radius: 0px 0px 12px 12px;
+    position: relative;
+    &::after {
+        content: '';
+        height: 10px;
+        background: $colorPurple;
+        border-radius: 0px 0px 12px 12px;
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: -10px;
+    }
+    &::before {
+        content: '';
+        height: 10px;
+        background: $colorPurpleLight;
+        border-radius: 0px 0px 12px 12px;
+        position: absolute;
+        left: 40px;
+        right: 40px;
+        bottom: -20px;
+    }
+}

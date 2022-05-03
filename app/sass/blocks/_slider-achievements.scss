@@ -1,0 +1,99 @@
+.slider-achievements {
+    padding: 31px 0 53px 0;
+    background: $colorGreyBg;
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $colorMain;
+        margin-bottom: 28px;
+    }
+    &__wrapper-items {
+        margin-bottom: 24px;
+    }
+    &__image {
+        background: $colorWhite;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        max-width: 255px;
+        margin: 0 auto;
+        padding: 25px;
+        &:nth-child(1n+2) {
+            display: none;
+        }
+    }
+    &__pic-1 {
+        max-width: 53px;
+        max-height: 40px;
+    }
+    &__pic-2 {
+        max-width: 106px;
+        max-height: 40px;
+    }
+    &__pic-3 {
+        max-width: 130px;
+        max-height: 40px;
+    }
+    &__pic-4 {
+        max-width: 111px;
+        max-height: 40px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .slider-achievements {
+        padding-top: 30px;
+        &__wrapper-items {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__image {
+            width: 20.4%;
+            max-width: initial;
+            margin: initial;
+            &:nth-child(1n+2) {
+                display: flex;
+            }
+        }
+        &__title {
+            margin-bottom: 29px;
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .slider-achievements {
+        &__wrapper-items {
+            margin-bottom: 21px;
+        }
+        &__image {
+            width: 21.7%;
+            padding: 26px;
+        }
+        &__pic-1 {
+            max-width: 80px;
+            max-height: 60px;
+        }
+        &__pic-2 {
+            max-width: 159px;
+            max-height: 60px;
+        }
+        &__pic-3 {
+            max-width: 195px;
+            max-height: 60px;
+        }
+        &__pic-4 {
+            max-width: 166px;
+            max-height: 60px;
+        }
+    }
+}
+@media screen and (min-width: 1320px) {
+    .slider-achievements {
+        &__image {
+            width: 22.8%;
+        }
+    }
+}

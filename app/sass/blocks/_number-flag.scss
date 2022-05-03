@@ -1,0 +1,9 @@
+.number-flag::before {
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-image: url('../img/flag.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 8px;
+}

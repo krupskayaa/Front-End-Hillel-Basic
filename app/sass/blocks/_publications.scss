@@ -1,0 +1,105 @@
+.publications {
+    background: #F5F5FA;
+    padding-top: 29px;
+    &__page-link &__link-object {
+        margin-left: 4px;
+    }
+    &__title-gradient {
+        margin: 4px 0 30px;
+    }
+    &__col-25 {
+        padding-bottom: 30px;
+    }
+    &__item {
+        background: #ffffff;
+        border-radius: 8px;
+    }
+    &__pic {
+        display: flex;
+    }
+    &__image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px 8px 0px 0px;
+    }
+    &__info {
+        padding: 31px 30px 30px 30px;
+    }
+    &__short-info {
+        border-bottom: 4px solid $colorGreySeparator;
+    }
+    &__link-title {
+        font-weight: 700;
+        line-height: 20px;
+        color: $colorActiveRegular;
+    }
+    &__link-title:hover {
+        color: $colorAccent;
+        transition: all 0.4s ease;
+    }
+    &__title {
+        font-size: 16px;
+    }
+    &__date {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $colorGreyText;
+        margin: 14px 0 15px;
+    }
+    &__description {
+        font-size: 14px;
+        line-height: 22px;
+        color: $colorBlack;
+        margin-top: 15px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .publications {
+        &__title-gradient {
+            margin: 10px 0 30px;
+        }
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            padding-bottom: 30px;
+        }
+        &__col-25:last-child {
+            grid-column-start: span 2;
+        }
+        &__col-25 {
+            padding-bottom: 0;
+        }
+        &__item {
+            height: 100%;
+        }
+        &__info {
+            padding: 30px;
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .publications {
+        &__wrapper {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        &__col-25:last-child {
+            grid-column-start: span 1;
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .publications {
+        &__title-gradient {
+            margin: 10px 0 29px;
+        }
+        &__info {
+            padding: 31px 30px 30px 30px;
+        }
+    }
+}
